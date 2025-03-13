@@ -2,7 +2,9 @@
 
 // API boilerplate
 const express = require('express');
+var cors = require('cors');
 const app = express();
+app.use(cors());
 const routes = require('./routes');
 
 // Logging
